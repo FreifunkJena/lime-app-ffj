@@ -6,13 +6,6 @@
    }],
    "format": "po",
    "compileNamespace": "cjs",
-   "extractBabelOptions": {
-       "presets": [
-         "preact",
-         "@babel/preset-typescript",
-         "@lingui/babel-preset-react"
-      ]
-   },
    "sourceLocale": "en",
    "fallbackLocales": {
       "default": "en"

@@ -1,12 +1,7 @@
 module.exports = {
-    presets: [
-        "@babel/preset-env",
-        "@babel/preset-typescript",
-        "@lingui/babel-preset-react",
-        "preact",
-    ],
+    presets: ["@babel/preset-env", "@babel/preset-typescript", "preact"],
     plugins: [
-        "macros",
+        "@lingui/babel-plugin-lingui-macro",
         ["@babel/plugin-transform-react-jsx", { pragma: "h" }],
         [
             "babel-plugin-jsx-pragmatic",

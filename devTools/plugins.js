@@ -28,7 +28,7 @@ export default Menu;
 const pageContent = (name) => {
     const componentName = name.charAt(0).toUpperCase() + name.slice(1);
     return `// ${componentName} will be rendered when navigating to this plugin
-import style from './${name}Style.less';
+import style from './${name}Style.module.less';
 import { useSomething } from './${name}Queries';
 
 const ${componentName} = () => {
@@ -111,20 +111,6 @@ describe('${name}', () => {
 `;
 };
 
-const storiesContent = (name, menuName) => {
-    const componentName = name.charAt(0).toUpperCase() + name.slice(1);
-    return `//Here you define the StoryBook stories for this plugin
-
-import ${componentName} from './src/${name}Page';
-
-export default {
-    title: 'Containers/${menuName || name}'
-}
-
-export const myStory = () => <${componentName} />
-`;
-};
-
 const styleContent = () => "// Here you define the css for this plugin";
 
 yargs(hideBin(process.argv))
@@ -176,7 +162,7 @@ function create(argv) {
         menuContent(name, argv.menuName)
     );
     fs.writeFileSync(
-        path.join(baseDir, "src", `${name}Style.less`),
+        path.join(baseDir, "src", `${name}Style.module.less`),
         styleContent()
     );
     fs.writeFileSync(
@@ -184,10 +170,6 @@ function create(argv) {
         indexContent(name, argv.protected)
     );
     fs.writeFileSync(path.join(baseDir, `${name}.spec.js`), specContent(name));
-    fs.writeFileSync(
-        path.join(baseDir, `${name}.stories.js`),
-        storiesContent(name)
-    );
     const configPath = path.join(__dirname, "..", "src", "config.js");
     console.log(
         `You are done. Remember to add ${name} to the list in ${configPath}`

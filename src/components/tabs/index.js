@@ -1,4 +1,4 @@
-import style from "./style.less";
+import style from "./style.module.less";
 
 const Tabs = ({ tabs, current, onChange }) => (
     <div className={style.tabs} role="tablist">

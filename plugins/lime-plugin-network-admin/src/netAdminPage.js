@@ -9,7 +9,7 @@ import {
     ValidationMessages,
     isValidPassword,
 } from "../../../src/containers/SharedPasswordForm";
-import style from "./style.less";
+import style from "./style.module.less";
 
 export const NetAdmin = ({ submitting, success, submitSharedPassword }) => {
     const [password, setPassword] = useState("");

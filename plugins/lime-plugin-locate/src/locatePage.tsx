@@ -16,7 +16,7 @@ import { useBoardData } from "utils/queries";
 
 import { getCommunityGeoJSON } from "./communityGeoJSON";
 import { homeIcon } from "./leafletUtils";
-import style from "./style.less";
+import style from "./style.module.less";
 
 const openStreetMapTileString = "http://{s}.tile.osm.org/{z}/{x}/{y}.png";
 const openStreetMapAttribution =

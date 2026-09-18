@@ -221,11 +221,7 @@ Once you have completed all translation you can run again
 
 to check that there are no missing keys for the targeted language. And create the Pull Request (including modifications to .po files).
 
-If you need more context to understand how to translate some key you can checkout the demo screens at storybook with:
-
-```npm run storybook```
-
-And findout how is that key used in the LimeApp.
+If you need more context to understand how a key is used, run the app with `npm run dev` and navigate to the relevant screen.
 Also, do not hesitate to contact developers directly :)
 
 

@@ -6,7 +6,7 @@ import { Loading } from "components/loading";
 import Toast from "components/toast";
 
 import { useFbwStatus, useScanRestart, useScanStart } from "../../FbwQueries";
-import style from "../../style.less";
+import style from "../../style.module.less";
 import { CancelButton, RescanButton } from "./components/buttons";
 import { NetworkTile } from "./components/networkTile";
 

@@ -1,4 +1,4 @@
 import App from "./components/app";
-import "./style";
+import "./style/index.less";
 
 export default App;

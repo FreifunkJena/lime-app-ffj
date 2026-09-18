@@ -1,7 +1,16 @@
-// For less files
+declare module "*.module.less" {
+    const mapping: Record<string, string>;
+    export default mapping;
+}
+
 declare module "*.less" {
     const mapping: Record<string, string>;
     export default mapping;
+}
+
+declare module "*.po" {
+    import type { Messages } from "@lingui/core";
+    export const messages: Messages;
 }
 
 type Locales = "en" | "es" | "pt" | "it";

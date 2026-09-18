@@ -1,6 +1,6 @@
 import { Trans } from "@lingui/macro";
 
-import style from "./style.less";
+import style from "./style.module.less";
 
 export const BannerWithOptions = ({
     title,

@@ -5,7 +5,7 @@ import { useInterval } from "react-use";
 import Loading from "components/loading";
 import ProgressBar from "components/progressbar";
 
-import "../style.less";
+import "../style.module.less";
 
 export const Setting = ({ expectedHost, expectedNetwork, delay = 1000 }) => {
     const [progress, setProgress] = useState(0);

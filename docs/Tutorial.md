@@ -354,56 +354,8 @@ const RemoteSupportPage = () => {
 
 #### Style and Visualization
 
-##### Storybook
-
 Once our component passes the tests, we can add styling with CSS classes to achieve the UI we are looking for.
-
-In order to visualize our component while we add style to it we use [StoryBook](https://storybook.js.org/). Storybook allows you to define the different states of your screen as different user `Stories` and render your component isolated in that context. This is very helpfull as it speeds up the visual feedback while developing components. Also, once the stories are written, it is easy to go back to them to monitor changes in the UI.
-This is how it looks like:  
-<img height="480" src="assets/storybook.gif" />
-
-
-Let's define the stories for our component.
-
-```javascript
-// File path: plugins/lime-plugin-remotesupport/remotesupport.stories.js
-import { RemoteSupportPage } from './src/remoteSupportPage';
-
-// In the default export we define a title for this group of stories.
-export default {
-	title: 'Containers/RemoteSupport'
-};
-
-// each additional export is a Story that represents a different scenario
-
-export const noSession = () => <RemoteSupportPage/>;
-noSession.args = {
-	queries: [
-		[['tmate', 'get_session'], null]
-	]
-};
-
-export const openedSession = () => <RemoteSupportPage />;
-openedSession.args = {
-	queries: [
-		[['tmate', 'get_session'], {
-			rw_ssh: 'ssh -p2222 pL2qpxKQvPP9f9GPWjG2WkfrM@remotesupportlibrerouter.org',
-			}
-		]
-	]
-};
-```
-
-In the example above we use a QueryCache mock, to give context to our stories. The details of this setup are in the StoryBook configuration.
-An alternative is to separate the implementation of our component in a HOC (High Order Component) and a presentational component, then the HOC passes properties to the presentational component with all the necessary information to do the rendering. This would allow us to visually test more cases, since there is no internal state in the presentational component.
-
-Both approaches have their pros and cons. It depends on each case which one is more comfortable.
-
-Once we define the stories, we can run Storybook with:
-
-```
-npm run storybook
-```
+Run the app with `npm run dev` to preview components in context while styling.
 
 ##### CSS
 

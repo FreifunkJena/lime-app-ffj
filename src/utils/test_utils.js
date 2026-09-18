@@ -1,10 +1,8 @@
 import { i18n } from "@lingui/core";
-// import i18n, { dynamicActivate } from '../i18n';
 import { I18nProvider } from "@lingui/react";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { render } from "@testing-library/preact";
 import { messages } from "i18n/en/messages";
-import { en } from "make-plural/plurals";
 import { setImmediate } from "timers";
 
 import queryCache from "utils/queryCache";
@@ -13,9 +11,6 @@ import SubHeader from "../containers/SubHeader";
 
 i18n.load({
     en: messages,
-});
-i18n.loadLocaleData({
-    en: { plurals: en },
 });
 
 const AllTheProviders = ({ children }) => {

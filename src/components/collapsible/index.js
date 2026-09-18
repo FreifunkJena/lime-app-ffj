@@ -1,6 +1,6 @@
 import { useToggle } from "react-use";
 
-import style from "./style.less";
+import style from "./style.module.less";
 
 export const Collapsible = ({ title, children, initCollapsed }) => {
     const [collapsed, toggleCollapsed] = useToggle(initCollapsed);

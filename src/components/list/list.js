@@ -1,4 +1,4 @@
-import style from "./style.less";
+import style from "./style.module.less";
 
 export const List = ({ children }) => (
     <div className={style.list}>{children}</div>

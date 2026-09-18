@@ -1,6 +1,6 @@
 import { ComponentChildren } from "preact";
 
-import style from "./style.less";
+import style from "./style.module.less";
 
 type OptionButtonProps = {
     description: ComponentChildren;

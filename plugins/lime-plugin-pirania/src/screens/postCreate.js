@@ -3,7 +3,7 @@ import { route } from "preact-router";
 
 import Copy from "../components/copy";
 import TimeAgo from "../components/timeAgo";
-import style from "../style.less";
+import style from "../style.module.less";
 
 const CodesText = ({ vouchers }) => (
     <div className="text-center">

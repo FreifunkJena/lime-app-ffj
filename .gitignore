@@ -3,9 +3,9 @@
 .DS_Store
 /coverage
 /.idea
-storybook-static
 .vscode
 build
+dist
 i18n/*/messages.js
 i18n/_build
 core

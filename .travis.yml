@@ -3,10 +3,6 @@ node_js: stable
 
 install: npm install
 
-stages:
-  - name: storybook
-    if: branch = develop
-
 jobs:
   include:
     - stage: tests
@@ -24,6 +20,3 @@ jobs:
           tags: true
       after_deploy:
         - "./.ci/send_pull_request.sh"
-    - stage: storybook
-      script:
-        - npm run storybook:build

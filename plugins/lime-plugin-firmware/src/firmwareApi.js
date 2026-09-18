@@ -1,11 +1,14 @@
-import path from "path";
-
 import api from "utils/uhttpd.service";
 
 const FW_PATH = {
     ".sh": "/tmp/upgrade.sh",
     ".bin": "/tmp/firmware.bin",
 };
+
+function fileExtname(filename) {
+    const match = /\.[^.]+$/.exec(filename);
+    return match ? match[0] : "";
+}
 
 export function getUpgradeInfo() {
     return api.call("lime-utils", "get_upgrade_info", {}).then((response) => ({
@@ -18,8 +21,8 @@ export function uploadFile(file) {
     return new Promise((res, rej) => {
         const request = new XMLHttpRequest();
         const formData = new FormData();
-        const extname = path.extname(file.name);
-        const destPath = FW_PATH[extname] || path.resolve("/tmp/", file.name);
+        const extname = fileExtname(file.name);
+        const destPath = FW_PATH[extname] || `/tmp/${file.name}`;
         formData.append("sessionid", api.sid());
         formData.append("filename", destPath);
         formData.append("filedata", file);

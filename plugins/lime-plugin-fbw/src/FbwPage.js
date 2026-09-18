@@ -7,7 +7,7 @@ import { FbwBanner } from "./containers/FbwBanner";
 import { NetworkForm } from "./containers/NetworkForm";
 import { Setting } from "./containers/Setting";
 import { ScanPage } from "./containers/scanPage/ScanPage";
-import "./style.less";
+import "./style.module.less";
 
 const Page = ({ ...props }) => {
     const { setMenuEnabled } = useAppContext();

@@ -1,6 +1,5 @@
 node_modules
 coverage
-storybook-static
 build
 package-lock.json
 i18n

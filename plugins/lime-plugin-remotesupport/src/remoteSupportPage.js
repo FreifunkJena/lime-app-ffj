@@ -10,7 +10,7 @@ import {
     useOpenSession,
     useSession,
 } from "./remoteSupportQueries";
-import style from "./style.less";
+import style from "./style.module.less";
 
 const RemoteSupportPage = () => {
     const { data: internetStatus, isLoading: loadingInternetStatus } =

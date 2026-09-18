@@ -2,7 +2,7 @@ import { Trans } from "@lingui/macro";
 import { useState } from "preact/hooks";
 
 import { plugins } from "../../config";
-import style from "./style.less";
+import style from "./style.module.less";
 
 export const Menu = ({ opened, toggle }) => {
     const [currentView, setCurrentView] = useState("node");

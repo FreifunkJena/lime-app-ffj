@@ -1,7 +1,7 @@
 import { ListItem } from "components/list";
 import Loading from "components/loading";
 
-import style from "./config.style.less";
+import style from "./config.style.module.less";
 
 export const Config = ({
     title,

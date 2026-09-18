@@ -6,7 +6,7 @@ import { ConfigPageLayout } from "plugins/lime-plugin-node-admin/src/layouts";
 import Copy from "../components/copy";
 import TimeAgo from "../components/timeAgo";
 import { useListVouchers } from "../piraniaQueries";
-import style from "../style.less";
+import style from "../style.module.less";
 
 const statusMsgs = {
     available: <Trans>Available</Trans>,

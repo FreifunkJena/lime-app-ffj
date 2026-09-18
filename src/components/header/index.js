@@ -4,7 +4,7 @@ import { useState } from "preact/hooks";
 import { useBoardData } from "utils/queries";
 
 import { useAppContext } from "../../utils/app.context";
-import style from "./style.less";
+import style from "./style.module.less";
 
 export const Header = ({ Menu }) => {
     const { data: boardData } = useBoardData();

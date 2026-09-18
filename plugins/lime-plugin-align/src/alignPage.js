@@ -5,14 +5,14 @@ import { useEffect, useState } from "preact/hooks";
 import { List, ListItem } from "components/list";
 import Loading from "components/loading";
 import { SignalBar } from "components/signalbar";
-import signalStyle from "components/signalbar/style.less";
+import signalStyle from "components/signalbar/style.module.less";
 import Tabs from "components/tabs";
 
 import { useBatHost } from "utils/queries";
 
 import { useAssocList, useMeshIfaces } from "./alignQueries";
 import { SecondsAgo } from "./components/secondsAgo";
-import style from "./style.less";
+import style from "./style.module.less";
 import { ifaceToRadioNumber } from "./utils";
 
 export const AssocRow = ({ station, iface }) => {

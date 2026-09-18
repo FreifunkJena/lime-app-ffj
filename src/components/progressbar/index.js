@@ -1,4 +1,4 @@
-import style from "./style.less";
+import style from "./style.module.less";
 
 const ProgressBar = ({ color = "#38927f", progress = 0 }) => (
     <div className={style.wrapper}>

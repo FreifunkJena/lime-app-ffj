@@ -13,6 +13,36 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
+#. placeholder {0}: Number(session.clients)
+#: plugins/lime-plugin-remotesupport/src/remoteSupportPage.js:136
+msgid "{0, plural, =0 {No one has joined yet.} one {One person has joined.} other {# people have joined.}}"
+msgstr ""
+
+#: plugins/lime-plugin-rx/src/rxPage.js:20
+msgid "{days, plural, one {# day} other {# days}}"
+msgstr ""
+
+#: plugins/lime-plugin-rx/src/rxPage.js:23
+msgid "{hours, plural, one {# hour} other {# hours}}"
+msgstr ""
+
+#: plugins/lime-plugin-rx/src/rxPage.js:26
+msgid "{mins, plural, one {# minute} other {# minutes}}"
+msgstr ""
+
+#: plugins/lime-plugin-align/src/components/secondsAgo.js:23
+msgid "{secondsAmount} seconds ago"
+msgstr ""
+
+#: plugins/lime-plugin-rx/src/rxPage.js:29
+msgid "{secs, plural, one {# second} other {# seconds}}"
+msgstr ""
+
+#: plugins/lime-plugin-firmware/src/upgradeAvailable.js:32
+#: plugins/lime-plugin-firmware/src/upgradePage/upgradePage.js:88
+msgid "{versionName} is now available"
+msgstr ""
+
 #: plugins/lime-plugin-firmware/src/upgradeAvailable.js:67
 msgid "A new firmware version has been released"
 msgstr ""
@@ -21,14 +51,15 @@ msgstr ""
 msgid "A reboot is needed to apply changes"
 msgstr ""
 
-#: plugins/lime-plugin-pirania/src/piraniaMenu.js:9
-msgid "Access Vouchers"
-msgstr "Access Vouchers"
-
 #: plugins/lime-plugin-pirania/nodeAdmin/PortalConfigPage.js:54
 msgid "Access vouchers"
 msgstr "Access vouchers"
 
+#: plugins/lime-plugin-pirania/src/piraniaMenu.js:9
+msgid "Access Vouchers"
+msgstr "Access Vouchers"
+
+#. placeholder {0}: TimeAgo({ timestamp: activation_date })
 #: plugins/lime-plugin-pirania/src/screens/voucher.js:74
 msgid "Activation date: {0}"
 msgstr "Activation date: {0}"
@@ -37,6 +68,7 @@ msgstr "Activation date: {0}"
 msgid "Activation deadline"
 msgstr "Activation deadline"
 
+#. placeholder {0}: TimeAgo({ timestamp: activation_deadline })
 #: plugins/lime-plugin-pirania/src/components/voucherListItem.js:79
 #: plugins/lime-plugin-pirania/src/screens/postCreate.js:53
 #: plugins/lime-plugin-pirania/src/screens/voucher.js:82
@@ -102,6 +134,10 @@ msgstr ""
 
 #: plugins/lime-plugin-metrics/src/metricsPage.tsx:96
 msgid "Calculating network path"
+msgstr ""
+
+#: plugins/lime-plugin-locate/src/locatePage.tsx:225
+msgid "cancel"
 msgstr ""
 
 #: plugins/lime-plugin-fbw/src/containers/FbwBanner.tsx:83
@@ -186,6 +222,10 @@ msgstr ""
 msgid "Community Logo"
 msgstr "Community Logo"
 
+#: plugins/lime-plugin-fbw/src/containers/NetworkForm.js:92
+msgid "Community name"
+msgstr ""
+
 #: plugins/lime-plugin-pirania/nodeAdmin/PortalConfigItem.tsx:27
 #: plugins/lime-plugin-pirania/nodeAdmin/PortalConfigPage.js:113
 msgid "Community Portal"
@@ -196,16 +236,16 @@ msgstr "Community Portal"
 msgid "Community Roaming AP"
 msgstr ""
 
-#: plugins/lime-plugin-fbw/src/containers/NetworkForm.js:92
-msgid "Community name"
-msgstr ""
-
 #: plugins/lime-plugin-fbw/src/containers/NetworkForm.js:83
 msgid "Configure your new community network"
 msgstr ""
 
 #: plugins/lime-plugin-firmware/src/confirmPage/confirmPage.js:11
 msgid "Confirm"
+msgstr ""
+
+#: plugins/lime-plugin-locate/src/locatePage.tsx:211
+msgid "confirm location"
 msgstr ""
 
 #: plugins/lime-plugin-fbw/src/containers/Setting.js:127
@@ -240,6 +280,11 @@ msgstr "Connection to the internet"
 msgid "Create"
 msgstr "Create"
 
+#: plugins/lime-plugin-fbw/src/containers/FbwBanner.tsx:58
+#: plugins/lime-plugin-fbw/src/containers/NetworkForm.js:145
+msgid "Create network"
+msgstr ""
+
 #: plugins/lime-plugin-remotesupport/src/remoteSupportPage.js:116
 msgid "Create Session"
 msgstr ""
@@ -248,10 +293,10 @@ msgstr ""
 msgid "Create Voucher"
 msgstr "Create Voucher"
 
-#: plugins/lime-plugin-fbw/src/containers/FbwBanner.tsx:58
-#: plugins/lime-plugin-fbw/src/containers/NetworkForm.js:145
-msgid "Create network"
-msgstr ""
+#. placeholder {0}: TimeAgo({ timestamp: creation_date })
+#: plugins/lime-plugin-pirania/src/components/voucherListItem.js:87
+msgid "Created {0}"
+msgstr "Created {0}"
 
 #: plugins/lime-plugin-pirania/src/screens/voucherList.js:82
 msgid "Created in this node"
@@ -261,10 +306,7 @@ msgstr "Created in this node"
 msgid "Created vouchers"
 msgstr "Created vouchers"
 
-#: plugins/lime-plugin-pirania/src/components/voucherListItem.js:87
-msgid "Created {0}"
-msgstr "Created {0}"
-
+#. placeholder {0}: TimeAgo({ timestamp: creation_date })
 #: plugins/lime-plugin-pirania/src/screens/voucher.js:53
 msgid "Creation date: {0}"
 msgstr "Creation date: {0}"
@@ -306,19 +348,23 @@ msgstr ""
 msgid "Downloading"
 msgstr ""
 
-#: plugins/lime-plugin-pirania/src/screens/postCreate.js:18
-#: plugins/lime-plugin-pirania/src/screens/voucher.js:59
-msgid "Duration: is permanent"
-msgstr "Duration: is permanent"
-
 #: plugins/lime-plugin-pirania/src/screens/postCreate.js:22
 #: plugins/lime-plugin-pirania/src/screens/voucher.js:20
 msgid "Duration: {days, plural, one {# day} other {# days}}"
 msgstr "Duration: {days, plural, one {# day} other {# days}}"
 
+#: plugins/lime-plugin-pirania/src/screens/postCreate.js:18
+#: plugins/lime-plugin-pirania/src/screens/voucher.js:59
+msgid "Duration: is permanent"
+msgstr "Duration: is permanent"
+
 #: plugins/lime-plugin-pirania/src/screens/voucher.js:90
 msgid "Edit"
 msgstr "Edit"
+
+#: plugins/lime-plugin-locate/src/locatePage.tsx:227
+msgid "edit location"
+msgstr ""
 
 #: plugins/lime-plugin-pirania/src/screens/editVoucher.js:84
 msgid "Edit Voucher"
@@ -402,6 +448,7 @@ msgstr "Error stopping scan"
 msgid "Error: Not Saved"
 msgstr ""
 
+#. placeholder {0}: TimeAgo({ timestamp: expiration_date })
 #: plugins/lime-plugin-pirania/src/screens/voucher.js:66
 msgid "Expiration date: {0}"
 msgstr "Expiration date: {0}"
@@ -412,10 +459,12 @@ msgstr "Expiration date: {0}"
 msgid "Expired"
 msgstr "Expired"
 
+#. placeholder {0}: TimeAgo({ timestamp: expiration_date })
 #: plugins/lime-plugin-pirania/src/components/voucherListItem.js:71
 msgid "Expired {0}"
 msgstr "Expired {0}"
 
+#. placeholder {0}: TimeAgo({ timestamp: expiration_date })
 #: plugins/lime-plugin-pirania/src/components/voucherListItem.js:63
 msgid "Expires {0}"
 msgstr "Expires {0}"
@@ -471,6 +520,10 @@ msgstr ""
 msgid "Ground Routing configuration"
 msgstr ""
 
+#: plugins/lime-plugin-locate/src/locatePage.tsx:217
+msgid "hide community"
+msgstr ""
+
 #: plugins/lime-plugin-remotesupport/src/consoleView.js:17
 msgid "Hide Console"
 msgstr ""
@@ -481,10 +534,6 @@ msgstr ""
 
 #: src/containers/SharedPasswordLogin/sharedPasswordLogin.tsx:67
 msgid "I don't know the shared password"
-msgstr ""
-
-#: plugins/lime-plugin-rx/src/rxPage.js:181
-msgid "IP Addresses"
 msgstr ""
 
 #: plugins/lime-plugin-fbw/src/containers/FbwBanner.tsx:73
@@ -521,6 +570,10 @@ msgstr "Invalidate"
 #: plugins/lime-plugin-pirania/src/screens/voucherList.js:97
 msgid "Invalidated"
 msgstr "Invalidated"
+
+#: plugins/lime-plugin-rx/src/rxPage.js:181
+msgid "IP Addresses"
+msgstr ""
 
 #: plugins/lime-plugin-pirania/src/components/createVoucherForm.tsx:75
 msgid "Is permanent"
@@ -568,6 +621,10 @@ msgstr ""
 msgid "Local services link"
 msgstr "Local services link"
 
+#: plugins/lime-plugin-locate/src/locatePage.tsx:230
+msgid "locate my node"
+msgstr ""
+
 #: src/containers/SharedPasswordLogin/sharedPasswordLogin.tsx:81
 msgid "Logging in"
 msgstr ""
@@ -610,6 +667,10 @@ msgstr ""
 
 #: src/containers/SharedPasswordForm/sharedPasswordForm.js:41
 msgid "More than 10 characters"
+msgstr ""
+
+#: plugins/lime-plugin-align/src/components/secondsAgo.js:21
+msgid "more than a minute ago"
 msgstr ""
 
 #: plugins/lime-plugin-rx/src/rxPage.js:80
@@ -732,6 +793,10 @@ msgstr "Please stay connected to the wifi network"
 msgid "Please verify your internet connection"
 msgstr ""
 
+#: plugins/lime-plugin-fbw/src/containers/Setting.js:90
+msgid "Please wait {time} seconds"
+msgstr ""
+
 #: plugins/lime-plugin-firmware/src/upgradingPage/upgradingPage.js:36
 msgid "Please wait patiently for {remainingTime} seconds and do not disconnect the device."
 msgstr ""
@@ -739,10 +804,6 @@ msgstr ""
 #: plugins/lime-plugin-firmware/src/confirmPage/confirmPage.js:36
 #: src/containers/RebootPage/RebootPage.js:28
 msgid "Please wait while the device reboots, and reload the app"
-msgstr ""
-
-#: plugins/lime-plugin-fbw/src/containers/Setting.js:90
-msgid "Please wait {time} seconds"
 msgstr ""
 
 #: plugins/lime-plugin-align/src/alignPage.js:137
@@ -870,13 +931,13 @@ msgstr ""
 msgid "Setting up new password"
 msgstr ""
 
-#: plugins/lime-plugin-remotesupport/src/remoteSupportPage.js:90
-msgid "Setup Hotspot"
-msgstr "Setup Hotspot"
-
 #: plugins/lime-plugin-pirania/src/components/createVoucherForm.tsx:111
 msgid "Setup activation deadline"
 msgstr "Setup activation deadline"
+
+#: plugins/lime-plugin-remotesupport/src/remoteSupportPage.js:90
+msgid "Setup Hotspot"
+msgstr "Setup Hotspot"
 
 #: plugins/lime-plugin-remotesupport/src/remoteSupportPage.js:146
 msgid "Share the following command with whoever you want to give them access to your node"
@@ -893,6 +954,10 @@ msgstr ""
 
 #: plugins/lime-plugin-network-admin/src/netAdminPage.js:87
 msgid "Shared Password changed successfully"
+msgstr ""
+
+#: plugins/lime-plugin-locate/src/locatePage.tsx:219
+msgid "show community"
 msgstr ""
 
 #: plugins/lime-plugin-remotesupport/src/remoteSupportPage.js:156
@@ -913,12 +978,17 @@ msgstr ""
 msgid "Status"
 msgstr ""
 
+#. placeholder {0}: statusMsgs[status]
 #: plugins/lime-plugin-pirania/src/screens/voucher.js:62
 msgid "Status: {0}"
 msgstr "Status: {0}"
 
 #: plugins/lime-plugin-rx/src/rxPage.js:42
 msgid "System"
+msgstr ""
+
+#: plugins/lime-plugin-align/src/alignPage.js:157
+msgid "The are not mesh interfaces available"
 msgstr ""
 
 #: plugins/lime-plugin-node-admin/src/screens/roamingAP.js:75
@@ -928,10 +998,6 @@ msgstr ""
 #: plugins/lime-plugin-pirania/nodeAdmin/PortalConfigPage.js:32
 msgid "The Community Portal enables a welcome screen to be displayed in the web browser to anyone connecting to the network using the Community AP"
 msgstr "The Community Portal enables a welcome screen to be displayed in the web browser to anyone connecting to the network using the Community AP"
-
-#: plugins/lime-plugin-align/src/alignPage.js:157
-msgid "The are not mesh interfaces available"
-msgstr ""
 
 #: plugins/lime-plugin-firmware/src/upgradePage/upgradePage.js:113
 msgid "The download failed"
@@ -1022,13 +1088,21 @@ msgstr ""
 msgid "Title"
 msgstr "Title"
 
+#: plugins/lime-plugin-remotesupport/src/remoteSupportPage.js:78
+msgid "To enable remote access an internet connection is needed"
+msgstr "To enable remote access an internet connection is needed"
+
 #: plugins/lime-plugin-metrics/src/metricsPage.tsx:163
 msgid "To Internet"
 msgstr ""
 
-#: plugins/lime-plugin-remotesupport/src/remoteSupportPage.js:78
-msgid "To enable remote access an internet connection is needed"
-msgstr "To enable remote access an internet connection is needed"
+#: plugins/lime-plugin-firmware/src/confirmPage/confirmPage.js:14
+msgid "to keep the current configuration. Or ..."
+msgstr ""
+
+#: plugins/lime-plugin-firmware/src/confirmPage/confirmPage.js:20
+msgid "to the previous configuration"
+msgstr ""
 
 #: plugins/lime-plugin-rx/src/rxPage.js:103
 msgid "Traffic"
@@ -1050,13 +1124,13 @@ msgstr ""
 msgid "Upgrade Now"
 msgstr ""
 
-#: plugins/lime-plugin-firmware/src/upgradePage/upgradePage.js:85
-msgid "Upgrade to lastest firmware version"
-msgstr ""
-
 #: plugins/lime-plugin-firmware/src/upgradePage/upgradePage.js:106
 #: plugins/lime-plugin-firmware/src/upgradePage/upgradePage.js:122
 msgid "Upgrade to {versionName}"
+msgstr ""
+
+#: plugins/lime-plugin-firmware/src/upgradePage/upgradePage.js:85
+msgid "Upgrade to lastest firmware version"
 msgstr ""
 
 #: plugins/lime-plugin-firmware/src/upgradePage/upgradePage.js:181
@@ -1140,8 +1214,12 @@ msgid "You are connected to another node in the network, try connecting to"
 msgstr ""
 
 #: plugins/lime-plugin-fbw/src/containers/Setting.js:135
-msgid "You are now part of"
-msgstr ""
+#~ msgid "You are now part of"
+#~ msgstr ""
+
+#: plugins/lime-plugin-fbw/src/containers/Setting.js:135
+msgid "You are now part of "
+msgstr "You are now part of "
 
 #: plugins/lime-plugin-remotesupport/src/remoteSupportPage.js:83
 msgid "You can share your mobile connection to the node by setting up a mobile hotspot"
@@ -1170,74 +1248,3 @@ msgstr ""
 #: plugins/lime-plugin-remotesupport/src/remoteSupportPage.js:74
 msgid "Your node has no internet connection"
 msgstr "Your node has no internet connection"
-
-#: plugins/lime-plugin-locate/src/locateMap.tsx:207
-#: plugins/lime-plugin-locate/src/locatePage.tsx:225
-msgid "cancel"
-msgstr ""
-
-#: plugins/lime-plugin-locate/src/locateMap.tsx:193
-#: plugins/lime-plugin-locate/src/locatePage.tsx:211
-msgid "confirm location"
-msgstr ""
-
-#: plugins/lime-plugin-locate/src/locateMap.tsx:209
-#: plugins/lime-plugin-locate/src/locatePage.tsx:227
-msgid "edit location"
-msgstr ""
-
-#: plugins/lime-plugin-locate/src/locateMap.tsx:199
-#: plugins/lime-plugin-locate/src/locatePage.tsx:217
-msgid "hide community"
-msgstr ""
-
-#: plugins/lime-plugin-locate/src/locateMap.tsx:212
-#: plugins/lime-plugin-locate/src/locatePage.tsx:230
-msgid "locate my node"
-msgstr ""
-
-#: plugins/lime-plugin-align/src/components/secondsAgo.js:21
-msgid "more than a minute ago"
-msgstr ""
-
-#: plugins/lime-plugin-locate/src/locateMap.tsx:201
-#: plugins/lime-plugin-locate/src/locatePage.tsx:219
-msgid "show community"
-msgstr ""
-
-#: plugins/lime-plugin-firmware/src/confirmPage/confirmPage.js:14
-msgid "to keep the current configuration. Or ..."
-msgstr ""
-
-#: plugins/lime-plugin-firmware/src/confirmPage/confirmPage.js:20
-msgid "to the previous configuration"
-msgstr ""
-
-#: plugins/lime-plugin-remotesupport/src/remoteSupportPage.js:136
-msgid "{0, plural, =0 {No one has joined yet.} one {One person has joined.} other {# people have joined.}}"
-msgstr ""
-
-#: plugins/lime-plugin-rx/src/rxPage.js:20
-msgid "{days, plural, one {# day} other {# days}}"
-msgstr ""
-
-#: plugins/lime-plugin-rx/src/rxPage.js:23
-msgid "{hours, plural, one {# hour} other {# hours}}"
-msgstr ""
-
-#: plugins/lime-plugin-rx/src/rxPage.js:26
-msgid "{mins, plural, one {# minute} other {# minutes}}"
-msgstr ""
-
-#: plugins/lime-plugin-align/src/components/secondsAgo.js:23
-msgid "{secondsAmount} seconds ago"
-msgstr ""
-
-#: plugins/lime-plugin-rx/src/rxPage.js:29
-msgid "{secs, plural, one {# second} other {# seconds}}"
-msgstr ""
-
-#: plugins/lime-plugin-firmware/src/upgradeAvailable.js:32
-#: plugins/lime-plugin-firmware/src/upgradePage/upgradePage.js:88
-msgid "{versionName} is now available"
-msgstr ""

@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 
 import { getGroundRouting } from "./groundRoutingActions";
-import "./style.less";
+import "./style.module.less";
 
 const Page = ({ getGroundRouting, loading, configuration }) => {
     useEffect(() => {

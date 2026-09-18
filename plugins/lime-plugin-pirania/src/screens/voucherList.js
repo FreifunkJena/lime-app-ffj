@@ -8,7 +8,7 @@ import { useBoardData } from "utils/queries";
 
 import VoucherListItem from "../components/voucherListItem";
 import { useListVouchers } from "../piraniaQueries";
-import style from "../style.less";
+import style from "../style.module.less";
 
 const VoucherList = () => {
     const { data: boardData, isLoading: loadingBoardData } = useBoardData();

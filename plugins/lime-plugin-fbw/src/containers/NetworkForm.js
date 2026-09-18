@@ -8,7 +8,7 @@ import {
     isValidPassword,
 } from "../../../../src/containers/SharedPasswordForm";
 import { useCreateNetwork } from "../FbwQueries";
-import "../style.less";
+import "../style.module.less";
 
 export const NetworkForm = ({
     toggleForm,

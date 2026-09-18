@@ -1,7 +1,7 @@
 import { Trans } from "@lingui/macro";
 import { route } from "preact-router";
 
-import style from "../style.less";
+import style from "../style.module.less";
 import Copy from "./copy";
 import TimeAgo from "./timeAgo";
 

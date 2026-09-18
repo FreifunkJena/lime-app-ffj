@@ -5,7 +5,7 @@ import { useEffect, useState } from "preact/hooks";
 import Loading from "components/loading";
 
 import { useSession } from "./remoteSupportQueries";
-import style from "./style.less";
+import style from "./style.module.less";
 
 export const ConsoleView_ = ({ sessionSrc, goBack }) => (
     <div className="d-flex flex-column flex-grow-1">

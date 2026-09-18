@@ -8,7 +8,7 @@ import { useBoardData } from "utils/queries";
 
 import { getNotes, setNotes } from "./notesActions";
 import { getNotesState } from "./notesSelectors";
-import style from "./style.less";
+import style from "./style.module.less";
 
 export const Page = ({ setNotes, getNotes, notes, loading }) => {
     const { data: boardData } = useBoardData();

@@ -1,5 +1,4 @@
 import { Trans } from "@lingui/macro";
-import path from "path";
 import { useEffect, useState } from "preact/hooks";
 import { useForm } from "react-hook-form";
 
@@ -13,7 +12,7 @@ import {
     useUpgradeFirwmare,
     useUpgradeInfo,
 } from "../firmwareQueries";
-import style from "./style.less";
+import style from "./style.module.less";
 
 export const SafeUpgradeBadge = () => {
     const { isLoading, data: upgradeInfo } = useUpgradeInfo();
@@ -133,7 +132,9 @@ const UpgradeFromRelease = ({ onUpgrading, onSwitch }) => {
             )}
             <div style={{ marginTop: "1em" }}>
                 <a href="#" onClick={onSwitch}>
-                    <Trans>Or choose a firmware image from your device</Trans>{" "}
+                    <Trans>
+                        Or choose a firmware image from your device
+                    </Trans>{" "}
                 </a>
             </div>
         </div>
@@ -169,7 +170,8 @@ export const UpgradeFromFile = ({ onUpgrading, onSwitch }) => {
     }
 
     function isValidExtname(value) {
-        const extname = path.extname(value[0].name);
+        const match = /\.[^.]+$/.exec(value[0].name);
+        const extname = match ? match[0] : "";
         return extname === ".sh" || extname === ".bin";
     }
 

@@ -2,9 +2,9 @@ import { Trans } from "@lingui/macro";
 
 import { ListItem } from "components/list";
 import { SignalBar } from "components/signalbar";
-import signalStyle from "components/signalbar/style.less";
+import signalStyle from "components/signalbar/style.module.less";
 
-import style from "../../../style.less";
+import style from "../../../style.module.less";
 
 export const NetworkTile = ({
     station,

@@ -4,7 +4,7 @@ import { useEffect, useState } from "preact/hooks";
 
 import Loading from "components/loading";
 import { SignalBar } from "components/signalbar";
-import signalStyle from "components/signalbar/style.less";
+import signalStyle from "components/signalbar/style.module.less";
 
 import { useBatHost } from "utils/queries";
 
@@ -12,7 +12,7 @@ import { useAssocList } from "../../alignQueries";
 import { SecondsAgo } from "../../components/secondsAgo";
 import { SignalSpeech } from "../../components/signalSpeech";
 import { ifaceToRadioNumber } from "../../utils";
-import style from "./style.less";
+import style from "./style.module.less";
 
 function getStation(assoclist, mac) {
     const station = assoclist.filter((sta) => sta.mac === mac);

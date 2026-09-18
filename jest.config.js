@@ -12,6 +12,8 @@ module.exports = {
     setupFiles: ["core-js", "jest-localstorage-mock"],
     moduleNameMapper: {
         ...preactPreset.moduleNameMapper,
+        "\\.(module\\.)?less$": "identity-obj-proxy",
+        "\\.po$": "<rootDir>/__mocks__/linguiPo.js",
         "^components/(.*)$": "<rootDir>/src/components/$1",
         "^utils/(.*)$": "<rootDir>/src/utils/$1",
         "^containers/(.*)$": "<rootDir>/src/containers/$1",
